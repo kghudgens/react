@@ -6,10 +6,18 @@ import reportWebVitals from './reportWebVitals';
 // render allows you to inject elements into the DOM,
 ReactDOM.render(
   // Its first argument is what you want to create 
-  React.createElement("h1", {style: {color: "blue"}}, "Heyyyy Everyone"),
+  // React.createElement("h1", {style: {color: "blue"}}, "Heyyyy Everyone"),
+  
+// Using JSX to create element for easier use 
+  <ul>
+    <li>Cat</li>
+    <li>CatMan</li>
+    <li>CatMan Jackson</li>
+  </ul>,
   // Second is the container it is to be placed in
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
