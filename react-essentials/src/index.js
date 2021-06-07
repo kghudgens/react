@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// render allows you to inject elements into the DOM,
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // Its first argument is what you want to create 
+  React.createElement("h1", {style: {color: "blue"}}, "Heyyyy Everyone"),
+  // Second is the container it is to be placed in
   document.getElementById('root')
 );
 
