@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import App from "./App"
 
 // render allows you to inject elements into the DOM,
 ReactDOM.render(
@@ -9,11 +10,7 @@ ReactDOM.render(
   // React.createElement("h1", {style: {color: "blue"}}, "Heyyyy Everyone"),
   
 // Using JSX to create element for easier use 
-  <ul>
-    <li>Cat</li>
-    <li>CatMan</li>
-    <li>CatMan Jackson</li>
-  </ul>,
+  <App/>,
   // Second is the container it is to be placed in
   document.getElementById('root')
 );
