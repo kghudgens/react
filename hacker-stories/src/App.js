@@ -15,7 +15,10 @@ function Main(props){
     <section>
     <p>We serve the most {props.adjective} food around.</p>
     <ul style={{ textAlign: "left"}}>
-      {props.dishes.map((dish)=> (<li>{dish}</li>))}
+      {props.dishes.smap((dish, i)=> (
+      <li key={i}>{dish}</li>)
+        )
+      }
     </ul>
     </section>
   )
