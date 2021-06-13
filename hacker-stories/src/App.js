@@ -1,10 +1,8 @@
 import "./App.css";
 
-function getTitle(title) {
-  return title;
-}
+const getTitle = (title) => title;
 
-function List() {
+const List = () => {
   return list.map(function (item) {
     return (
       <div key={item.objectID}>
@@ -17,7 +15,7 @@ function List() {
       </div>
     );
   });
-}
+};
 
 const list = [
   {
@@ -49,6 +47,7 @@ function App() {
       <input id="search" type="text" />
 
       <hr />
+
       <List />
     </div>
   );
